@@ -9,7 +9,7 @@ Scenario: DS-AGRI-STOCK-001 (synthetic, AI-generated practice scenario). Reviewe
 - **No Task 3 reviewer decision recorded. Not self-approved.**
 
 ## Code revision
-Not a git repository. Combined SHA-256 of 42 files (src, tests, tools, schemas, data), from the candidate's Windows run:
+ Combined SHA-256 of 42 files (src, tests, tools, schemas, data), from the candidate's Windows run:
 `b8ebb6745ef30c5ad44200c8fbed95c18234dfa7c1c9e4c05c1e111437b4cbb8`
 Per-file hashes: `evidence/code_manifest.json`.
 
