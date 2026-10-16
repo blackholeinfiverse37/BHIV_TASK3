@@ -1,0 +1,3 @@
+record_id,warehouse_id,commodity,batch_id,gross_kg,tare_kg,net_kg,moisture_pct,received_date,last_verified_date,source_system,source_ref,unit
+AS1-0001,WH-NSK-01,WHEAT,WH-NSK-01-B0001,5081.8,154.7,4927.1,11.4,2026-08-15,2026-08-28,SRC-WMS-A,SRC-WMS-A/20260815/00001,kg
+AS1-0029,WH-NSK-01,CHICKPEA,WH-NSK-01-B0029,2242.4,547.2,1695.2,8.9,2026-12-05,2026-08-08,SRC-WMS-B,SRC-WMS-B/20260712/00029,kg

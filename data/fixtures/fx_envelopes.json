@@ -1,0 +1,86 @@
+{
+  "_label": "SIMULATED registration envelopes. expected_* values are planted ground truth for tests.",
+  "envelopes": [
+    {
+      "id": "ENV-01",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.0.0",
+      "schema_version": "S1",
+      "file": "warehouse_stock_v1.csv",
+      "declared_record_count": 62,
+      "expected": "REGISTER_OK_WITH_WARNINGS"
+    },
+    {
+      "id": "ENV-02",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.1.0",
+      "schema_version": "S2",
+      "file": "warehouse_stock_v2.csv",
+      "declared_record_count": 24,
+      "expected": "REGISTER_OK_WITH_WARNINGS"
+    },
+    {
+      "id": "ENV-03",
+      "dataset_id": "DS-AGRI-NOPE",
+      "dataset_version": "1.0.0",
+      "schema_version": "S1",
+      "file": "warehouse_stock_v1.csv",
+      "declared_record_count": 62,
+      "expected": "REJECT_UNKNOWN_DATASET_ID"
+    },
+    {
+      "id": "ENV-04",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": null,
+      "schema_version": "S1",
+      "file": "warehouse_stock_v1.csv",
+      "declared_record_count": 62,
+      "expected": "REJECT_MISSING_VERSION"
+    },
+    {
+      "id": "ENV-05",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "2.0.0",
+      "schema_version": "S1",
+      "file": "warehouse_stock_v1.csv",
+      "declared_record_count": 62,
+      "expected": "REJECT_UNKNOWN_DATASET_VERSION"
+    },
+    {
+      "id": "ENV-06",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.0.0",
+      "schema_version": "S9",
+      "file": "warehouse_stock_v1.csv",
+      "declared_record_count": 62,
+      "expected": "REJECT_UNKNOWN_SCHEMA_VERSION"
+    },
+    {
+      "id": "ENV-07",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.1.0",
+      "schema_version": "S2",
+      "file": "fixtures/fx_GV-13_s1_columns.csv",
+      "declared_record_count": 3,
+      "expected": "REJECT_SCHEMA_MISMATCH (declares S2, columns are S1)"
+    },
+    {
+      "id": "ENV-08",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.0.0",
+      "schema_version": "S1",
+      "file": "fixtures/fx_GV-13_s2_columns.csv",
+      "declared_record_count": 3,
+      "expected": "REJECT_SCHEMA_MISMATCH (declares S1, columns are S2)"
+    },
+    {
+      "id": "ENV-09",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.0.0",
+      "schema_version": "S1",
+      "file": "warehouse_stock_v1.csv",
+      "declared_record_count": 60,
+      "expected": "REJECT_COUNT_MISMATCH (declared 60, actual 62)"
+    }
+  ]
+}

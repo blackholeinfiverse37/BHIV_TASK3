@@ -1,0 +1,4 @@
+record_id,warehouse_id,commodity,batch_id,gross_kg,tare_kg,net_kg,moisture_pct,received_date,last_verified_date,source_system,source_ref,unit
+AS1-0001,WH-NSK-01,WHEAT,WH-NSK-01-B0001,5081.8,154.7,4927.1,11.4,2026-08-15,2026-08-28,SRC-WMS-A,SRC-WMS-A/20260815/00001,kg
+AS1-0016,WH-NGP-01,MAIZE,WH-NGP-01-B0016,3273.4,375.0,2898.4,9.8,2026-08-10,2026-08-12,SRC-WMS-B,,kg
+AS1-0017,WH-NSK-01,WHEAT,WH-NSK-01-B0017,6413.3,282.5,6130.8,11.1,2026-08-01,2026-08-11,,SRC-MANUAL/20260801/00017,kg

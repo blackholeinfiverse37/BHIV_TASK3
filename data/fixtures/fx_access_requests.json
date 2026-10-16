@@ -1,0 +1,53 @@
+{
+  "_label": "SIMULATED requests with planted expected results.",
+  "requests": [
+    {
+      "id": "REQ-01",
+      "token": "tok-reader-01",
+      "action": "retrieve",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.0.0",
+      "expected": "ALLOW (records carry warnings/unresolved flags)"
+    },
+    {
+      "id": "REQ-02",
+      "token": null,
+      "action": "retrieve",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.0.0",
+      "expected": "DENY_UNAUTHENTICATED"
+    },
+    {
+      "id": "REQ-03",
+      "token": "tok-unknown-77",
+      "action": "retrieve",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.0.0",
+      "expected": "DENY_UNKNOWN_PRINCIPAL"
+    },
+    {
+      "id": "REQ-04",
+      "token": "tok-reader-01",
+      "action": "register",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.0.0",
+      "expected": "DENY_ROLE_NOT_PERMITTED"
+    },
+    {
+      "id": "REQ-05",
+      "token": "tok-reader-02",
+      "action": "retrieve",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.0.0",
+      "expected": "DENY_DATASET_NOT_GRANTED"
+    },
+    {
+      "id": "REQ-06",
+      "token": "tok-writer-01",
+      "action": "register",
+      "dataset_id": "DS-AGRI-STOCK-001",
+      "dataset_version": "1.1.0",
+      "expected": "ALLOW"
+    }
+  ]
+}

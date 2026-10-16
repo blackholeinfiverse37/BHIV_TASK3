@@ -1,0 +1,3 @@
+record_id,warehouse_id,commodity,batch_id,gross_kg,tare_kg,net_kg,moisture_pct,received_date,last_verified_date,source_system,source_ref,unit
+AS1-0001,WH-NSK-01,WHEAT,WH-NSK-01-B0001,5081.8,154.7,4927.1,11.4,2026-08-15,2026-08-28,SRC-WMS-A,SRC-WMS-A/20260815/00001,kg
+AS1-0008,WH-NGP-01,SOYBEAN,WH-NGP-01-B0008,12O0.5,272.5,3020.0,8.7,2026-08-24,2026-09-29,SRC-WMS-A,SRC-WMS-A/20260824/00008,kg
