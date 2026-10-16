@@ -1,0 +1,6 @@
+row_number,record_id,status,rules,first_message
+4,AS2-0004,REJECTED,GV-03,unknown quality grade 'Z'
+8,AS2-0008,REJECTED,GV-07,provenance missing: source reference empty
+12,AS2-0012,WARNING,GV-09,last verified 148 days before reference date (limit 90)
+16,AS2-0016,REJECTED,GV-02,"invalid date format '2026-10-02T09:30:00', expected YYYY-MM-DDTHH:MM:SS+HH:MM (offset required)"
+20,AS2-0020,UNRESOLVED,GV-08,source 'SRC-GHOST' not in registry

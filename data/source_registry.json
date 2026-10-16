@@ -1,0 +1,21 @@
+{
+  "_label": "SYNTHETIC local source registry, not a real BHIV/MASTERDB artefact",
+  "sources": [
+    {
+      "source_system": "SRC-WMS-A",
+      "status": "ACTIVE"
+    },
+    {
+      "source_system": "SRC-WMS-B",
+      "status": "ACTIVE"
+    },
+    {
+      "source_system": "SRC-MANUAL",
+      "status": "ACTIVE"
+    },
+    {
+      "source_system": "SRC-LEGACY",
+      "status": "DEPRECATED"
+    }
+  ]
+}

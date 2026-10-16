@@ -1,0 +1,115 @@
+== clean run: 2026-10-15T05:48:00Z ==
+Python 3.12.0
+MINGW64_NT-10.0-26300 3.6.10-710e5275.x86_64
+interpreter used: python
+== step 0: clear reports and evidence, move existing data aside
+== step 1: regenerate synthetic data
+v1 62 {'ACCEPTED': 34, 'REJECTED': 12, 'WARNING': 10, 'UNRESOLVED': 6}
+v2 24 {'ACCEPTED': 19, 'REJECTED': 3, 'WARNING': 1, 'UNRESOLVED': 1}
+data digest before: 02811c3581fb4c4fb7e40474dfc05051a860a84dc4ea47a8e72799250c18ccf7
+data digest after regeneration: b7e1caea9e340cc47acbbc0e6baa67a3d595ed9558c98e8a4234bd0070214918
+DATA DIFFERS FROM PREVIOUS COPY (expected if the previous copy came from another OS or did not exist)
+== step 2: profile, validate, simulated registration and retrieval
+Reference date 2026-10-15  stale after 90 days
+v1 rows=62 counts={'ACCEPTED': 34, 'WARNING': 10, 'UNRESOLVED': 6, 'REJECTED': 12} exceptions=28
+v2 rows=24 counts={'ACCEPTED': 19, 'WARNING': 1, 'UNRESOLVED': 1, 'REJECTED': 3} exceptions=5
+  ENV-01: REGISTER_OK_WITH_WARNINGS  (expected REGISTER_OK_WITH_WARNINGS)
+  ENV-02: REGISTER_OK_WITH_WARNINGS  (expected REGISTER_OK_WITH_WARNINGS)
+  ENV-03: REJECT_UNKNOWN_DATASET_ID  (expected REJECT_UNKNOWN_DATASET_ID)
+  ENV-04: REJECT_MISSING_VERSION  (expected REJECT_MISSING_VERSION)
+  ENV-05: REJECT_UNKNOWN_DATASET_VERSION  (expected REJECT_UNKNOWN_DATASET_VERSION)
+  ENV-06: REJECT_UNKNOWN_SCHEMA_VERSION  (expected REJECT_UNKNOWN_SCHEMA_VERSION)
+  ENV-07: REJECT_SCHEMA_MISMATCH  (expected REJECT_SCHEMA_MISMATCH)
+  ENV-08: REJECT_SCHEMA_MISMATCH  (expected REJECT_SCHEMA_MISMATCH)
+  ENV-09: REJECT_COUNT_MISMATCH  (expected REJECT_COUNT_MISMATCH)
+  REQ-01: ALLOW  (expected ALLOW)
+  REQ-02: DENY_UNAUTHENTICATED  (expected DENY_UNAUTHENTICATED)
+  REQ-03: DENY_UNKNOWN_PRINCIPAL  (expected DENY_UNKNOWN_PRINCIPAL)
+  REQ-04: DENY_ROLE_NOT_PERMITTED  (expected DENY_ROLE_NOT_PERMITTED)
+  REQ-05: DENY_DATASET_NOT_GRANTED  (expected DENY_DATASET_NOT_GRANTED)
+  REQ-06: ALLOW  (expected ALLOW)
+  RET-01: OK_WITH_WARNINGS returned=50
+  RET-02: OK_WITH_WARNINGS returned=21
+  RET-03: FAIL_COUNT_MISMATCH returned=50
+  RET-04: REJECT_MISSING_VERSION returned=None
+  RET-05: REJECT_UNKNOWN_DATASET_ID returned=None
+  RET-06: DENY_UNAUTHENTICATED returned=None
+Done. See reports/ and evidence/.
+== step 3: independent verifier
+v1 62 {'ACCEPTED': 34, 'WARNING': 10, 'UNRESOLVED': 6, 'REJECTED': 12}
+v2 24 {'ACCEPTED': 19, 'WARNING': 1, 'UNRESOLVED': 1, 'REJECTED': 3}
+== step 4: reconciliation
+# Reconciliation
+
+Three views of the same data: (A) application output, (B) independent verifier, (C) planted expected outcomes from the generator.
+
+
+## v1
+
+- MATCH: v1 row totals A=B=C (A=62 B=62 C=62)
+- MATCH: v1 status counts A=B (A={'ACCEPTED': 34, 'WARNING': 10, 'UNRESOLVED': 6, 'REJECTED': 12} B={'ACCEPTED': 34, 'WARNING': 10, 'UNRESOLVED': 6, 'REJECTED': 12})
+- MATCH: v1 status counts A=C (C={'ACCEPTED': 34, 'WARNING': 10, 'UNRESOLVED': 6, 'REJECTED': 12})
+- MATCH: v1 per-row status and rule set A=B=C (all rows agree)
+- MATCH: v1 exception count = rows not ACCEPTED (exceptions=28)
+
+## v2
+
+- MATCH: v2 row totals A=B=C (A=24 B=24 C=24)
+- MATCH: v2 status counts A=B (A={'ACCEPTED': 19, 'WARNING': 1, 'UNRESOLVED': 1, 'REJECTED': 3} B={'ACCEPTED': 19, 'WARNING': 1, 'UNRESOLVED': 1, 'REJECTED': 3})
+- MATCH: v2 status counts A=C (C={'ACCEPTED': 19, 'WARNING': 1, 'UNRESOLVED': 1, 'REJECTED': 3})
+- MATCH: v2 per-row status and rule set A=B=C (all rows agree)
+- MATCH: v2 exception count = rows not ACCEPTED (exceptions=5)
+
+## retrieval
+
+- MATCH: RET-01 retrieved row identities = independent non-rejected rows (50 rows)
+- MATCH: RET-01 withheld count = independent rejected count (withheld=12)
+- MATCH: RET-02 retrieved row identities = independent non-rejected rows (21 rows)
+- MATCH: RET-02 withheld count = independent rejected count (withheld=3)
+
+**Overall: ALL CHECKS MATCH**
+
+reconcile exit code: 0
+== step 5: automated tests
+Running 16 tests  (python 3.12.0)
+T01 PASS  Valid input
+T02 PASS  Missing required field
+T03 PASS  Invalid field type or value
+T04 PASS  Duplicate record
+T05 PASS  Missing provenance
+T06 PASS  Stale or unconfirmed freshness
+T07 PASS  Unknown dataset identity
+T08 PASS  Missing or incompatible version
+T09 PASS  Schema compatibility or breaking change
+T10 PASS  Unauthorized retrieval
+T11 PASS  Partial retrieval and records carrying warnings
+T12 PASS  Incorrect registration or retrieval count
+T13 PASS  Every row rule has a fixture that triggers it (coverage)
+T14 PASS  Application results equal the independent second implementation
+T15 PASS  Provenance preserved: every retrieved record carries its source reference
+T16 PASS  Determinism: two runs give identical output
+
+16/16 passed, 0 failed
+test exit code: 0
+== step 6: mutation check
+MUTATION CHECK (scratch copy; deliberate bugs: NET_REJECT_KG 5 -> 500, GV-07 source-reference check disabled)
+T01 PASS  Valid input
+T02 PASS  Missing required field
+T03 PASS  Invalid field type or value
+T04 PASS  Duplicate record
+T05 FAIL  Missing provenance
+T06 PASS  Stale or unconfirmed freshness
+T07 PASS  Unknown dataset identity
+T08 PASS  Missing or incompatible version
+T09 PASS  Schema compatibility or breaking change
+T10 PASS  Unauthorized retrieval
+T11 FAIL  Partial retrieval and records carrying warnings
+T12 FAIL  Incorrect registration or retrieval count
+T13 PASS  Every row rule has a fixture that triggers it (coverage)
+T14 FAIL  Application results equal the independent second implementation
+T15 FAIL  Provenance preserved: every retrieved record carries its source reference
+T16 PASS  Determinism: two runs give identical output
+11/16 passed, 5 failed
+== step 7: code manifest
+code revision (combined sha256): b8ebb6745ef30c5ad44200c8fbed95c18234dfa7c1c9e4c05c1e111437b4cbb8 (42 files)
+== end of clean run ==

@@ -1,0 +1,57 @@
+{
+  "row_count": 62,
+  "column_count": 13,
+  "columns": [
+    "record_id",
+    "warehouse_id",
+    "commodity",
+    "batch_id",
+    "gross_kg",
+    "tare_kg",
+    "net_kg",
+    "moisture_pct",
+    "received_date",
+    "last_verified_date",
+    "source_system",
+    "source_ref",
+    "unit"
+  ],
+  "missing_by_column": {
+    "record_id": 0,
+    "warehouse_id": 0,
+    "commodity": 1,
+    "batch_id": 0,
+    "gross_kg": 1,
+    "tare_kg": 0,
+    "net_kg": 0,
+    "moisture_pct": 0,
+    "received_date": 0,
+    "last_verified_date": 2,
+    "source_system": 1,
+    "source_ref": 1,
+    "unit": 0
+  },
+  "duplicate_record_id_extra_rows": 1,
+  "natural_key_conflict_groups": 1,
+  "invalid_numeric_cells": 1,
+  "invalid_date_cells": 0,
+  "source_reference_complete_rows": 60,
+  "source_reference_complete_pct": 96.8,
+  "source_system_distribution": {
+    "(empty)": 1,
+    "SRC-GHOST": 2,
+    "SRC-LEGACY": 3,
+    "SRC-MANUAL": 18,
+    "SRC-WMS-A": 19,
+    "SRC-WMS-B": 19
+  },
+  "commodity_distribution": {
+    "(empty)": 1,
+    "CHICKPEA": 21,
+    "MAIZE": 10,
+    "RICE": 15,
+    "SOYBEAN": 10,
+    "WHEAT": 4,
+    "WHEET": 1
+  }
+}

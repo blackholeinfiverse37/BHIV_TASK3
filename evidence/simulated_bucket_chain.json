@@ -1,0 +1,50 @@
+{
+  "label": "SIMULATED evidence chain. Not Bucket.",
+  "entries": [
+    {
+      "seq": 1,
+      "simulated": true,
+      "component": "Bucket(sim)",
+      "type": "registration",
+      "payload_sha256": "1cb2166aa66ee42f2ed0e1c3bae17be4f7ab2ecb4083e828228b9d2d84a21347",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "entry_hash": "0fe320476790112ad7b740aac7e36291a1473bc446ca17d06f899c833428fc71"
+    },
+    {
+      "seq": 2,
+      "simulated": true,
+      "component": "Bucket(sim)",
+      "type": "registration",
+      "payload_sha256": "8df801b51d4e3d463722fa59d209e4c64fd6be836b99b7a56810efc2de2af5db",
+      "prev_hash": "0fe320476790112ad7b740aac7e36291a1473bc446ca17d06f899c833428fc71",
+      "entry_hash": "7f4e548c82a800f1bb8c03d004b2c477101acb57379e3d8f3d8351de9115a94a"
+    },
+    {
+      "seq": 3,
+      "simulated": true,
+      "component": "Bucket(sim)",
+      "type": "retrieval",
+      "payload_sha256": "f0b503f60d9be75d0c7e530bb6481b882dced1300ad6f58a4f6cc84a2c007f9d",
+      "prev_hash": "7f4e548c82a800f1bb8c03d004b2c477101acb57379e3d8f3d8351de9115a94a",
+      "entry_hash": "1cc05f258eb3fb3828ce105eef32c94303b03a4cd026c20dae40a91e13a2392f"
+    },
+    {
+      "seq": 4,
+      "simulated": true,
+      "component": "Bucket(sim)",
+      "type": "retrieval",
+      "payload_sha256": "d3a4920ad65ebb055a6049036d82ef36bbb0c9d9c9ac2aa5fb3c9f169a5f99d1",
+      "prev_hash": "1cc05f258eb3fb3828ce105eef32c94303b03a4cd026c20dae40a91e13a2392f",
+      "entry_hash": "de99776ef4f38cfeb9d37284b540eacaa619b86aac4243ca6d15f15034b2b834"
+    },
+    {
+      "seq": 5,
+      "simulated": true,
+      "component": "Bucket(sim)",
+      "type": "retrieval",
+      "payload_sha256": "0d503d46976c566d0ef714cd5fb682cd1207642ffa9868ccefa69cbec31cf144",
+      "prev_hash": "de99776ef4f38cfeb9d37284b540eacaa619b86aac4243ca6d15f15034b2b834",
+      "entry_hash": "fcae8b43bd3c346134681f2ea0815656186e78b1ffd2491c6ce1bd46c5ad12eb"
+    }
+  ]
+}

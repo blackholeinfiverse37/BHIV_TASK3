@@ -1,0 +1,64 @@
+{
+  "_label": "SIMULATED catalog. Not a MASTERDB contract. Identity, dataset version and schema version are separate keys.",
+  "dataset_id": "DS-AGRI-STOCK-001",
+  "reference_date": "2026-10-15",
+  "stale_after_days": 90,
+  "versions": [
+    {
+      "dataset_version": "1.0.0",
+      "schema_version": "S1",
+      "file": "warehouse_stock_v1.csv",
+      "declared_record_count": 62
+    },
+    {
+      "dataset_version": "1.1.0",
+      "schema_version": "S2",
+      "file": "warehouse_stock_v2.csv",
+      "declared_record_count": 24
+    }
+  ],
+  "schema_versions": {
+    "S1": {
+      "columns": [
+        "record_id",
+        "warehouse_id",
+        "commodity",
+        "batch_id",
+        "gross_kg",
+        "tare_kg",
+        "net_kg",
+        "moisture_pct",
+        "received_date",
+        "last_verified_date",
+        "source_system",
+        "source_ref",
+        "unit"
+      ]
+    },
+    "S2": {
+      "columns": [
+        "record_id",
+        "warehouse_id",
+        "commodity",
+        "batch_id",
+        "gross_kg",
+        "tare_kg",
+        "net_weight_kg",
+        "moisture_percent",
+        "quality_grade",
+        "received_at",
+        "last_verified_at",
+        "source_system",
+        "provenance_ref"
+      ],
+      "breaking_changes_vs_S1": [
+        "net_kg renamed to net_weight_kg",
+        "moisture_pct renamed to moisture_percent",
+        "source_ref renamed to provenance_ref",
+        "received_date/last_verified_date replaced by timezone-aware received_at/last_verified_at",
+        "unit column removed",
+        "quality_grade added (A/B/C, required)"
+      ]
+    }
+  }
+}

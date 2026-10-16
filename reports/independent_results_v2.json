@@ -1,0 +1,166 @@
+{
+  "label": "Independent second implementation",
+  "total_rows": 24,
+  "counts": {
+    "ACCEPTED": 19,
+    "WARNING": 1,
+    "UNRESOLVED": 1,
+    "REJECTED": 3
+  },
+  "records": [
+    {
+      "row_number": 1,
+      "record_id": "AS2-0001",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 2,
+      "record_id": "AS2-0002",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 3,
+      "record_id": "AS2-0003",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 4,
+      "record_id": "AS2-0004",
+      "status": "REJECTED",
+      "rules": [
+        "GV-03"
+      ]
+    },
+    {
+      "row_number": 5,
+      "record_id": "AS2-0005",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 6,
+      "record_id": "AS2-0006",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 7,
+      "record_id": "AS2-0007",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 8,
+      "record_id": "AS2-0008",
+      "status": "REJECTED",
+      "rules": [
+        "GV-07"
+      ]
+    },
+    {
+      "row_number": 9,
+      "record_id": "AS2-0009",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 10,
+      "record_id": "AS2-0010",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 11,
+      "record_id": "AS2-0011",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 12,
+      "record_id": "AS2-0012",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ]
+    },
+    {
+      "row_number": 13,
+      "record_id": "AS2-0013",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 14,
+      "record_id": "AS2-0014",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 15,
+      "record_id": "AS2-0015",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 16,
+      "record_id": "AS2-0016",
+      "status": "REJECTED",
+      "rules": [
+        "GV-02"
+      ]
+    },
+    {
+      "row_number": 17,
+      "record_id": "AS2-0017",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 18,
+      "record_id": "AS2-0018",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 19,
+      "record_id": "AS2-0019",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 20,
+      "record_id": "AS2-0020",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-08"
+      ]
+    },
+    {
+      "row_number": 21,
+      "record_id": "AS2-0021",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 22,
+      "record_id": "AS2-0022",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 23,
+      "record_id": "AS2-0023",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 24,
+      "record_id": "AS2-0024",
+      "status": "ACCEPTED",
+      "rules": []
+    }
+  ]
+}

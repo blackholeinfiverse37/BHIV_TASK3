@@ -1,0 +1,575 @@
+{
+  "total": 16,
+  "passed": 16,
+  "failed": 0,
+  "tests": [
+    {
+      "id": "T01",
+      "title": "Valid input",
+      "mandatory_item": 1,
+      "expected": [
+        "ACCEPTED"
+      ],
+      "actual": [
+        "ACCEPTED"
+      ],
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T02",
+      "title": "Missing required field",
+      "mandatory_item": 2,
+      "expected": {
+        "s": [
+          "ACCEPTED",
+          "REJECTED",
+          "REJECTED"
+        ],
+        "r": [
+          [],
+          [
+            "GV-01"
+          ],
+          [
+            "GV-01"
+          ]
+        ]
+      },
+      "actual": {
+        "s": [
+          "ACCEPTED",
+          "REJECTED",
+          "REJECTED"
+        ],
+        "r": [
+          [],
+          [
+            "GV-01"
+          ],
+          [
+            "GV-01"
+          ]
+        ]
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T03",
+      "title": "Invalid field type or value",
+      "mandatory_item": 3,
+      "expected": {
+        "type": [
+          [
+            "ACCEPTED",
+            "REJECTED"
+          ],
+          [
+            [],
+            [
+              "GV-02"
+            ]
+          ]
+        ],
+        "value": [
+          [
+            "ACCEPTED",
+            "REJECTED",
+            "REJECTED",
+            "REJECTED"
+          ],
+          [
+            [],
+            [
+              "GV-03"
+            ],
+            [
+              "GV-03"
+            ],
+            [
+              "GV-03"
+            ]
+          ]
+        ]
+      },
+      "actual": {
+        "type": [
+          [
+            "ACCEPTED",
+            "REJECTED"
+          ],
+          [
+            [],
+            [
+              "GV-02"
+            ]
+          ]
+        ],
+        "value": [
+          [
+            "ACCEPTED",
+            "REJECTED",
+            "REJECTED",
+            "REJECTED"
+          ],
+          [
+            [],
+            [
+              "GV-03"
+            ],
+            [
+              "GV-03"
+            ],
+            [
+              "GV-03"
+            ]
+          ]
+        ]
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T04",
+      "title": "Duplicate record",
+      "mandatory_item": 4,
+      "expected": {
+        "dup_status": [
+          "ACCEPTED",
+          "ACCEPTED",
+          "REJECTED"
+        ],
+        "dup_rules": [
+          [],
+          [],
+          [
+            "GV-05"
+          ]
+        ],
+        "key_status": [
+          "ACCEPTED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "key_rules": [
+          [],
+          [
+            "GV-06"
+          ],
+          [
+            "GV-06"
+          ]
+        ]
+      },
+      "actual": {
+        "dup_status": [
+          "ACCEPTED",
+          "ACCEPTED",
+          "REJECTED"
+        ],
+        "dup_rules": [
+          [],
+          [],
+          [
+            "GV-05"
+          ]
+        ],
+        "key_status": [
+          "ACCEPTED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "key_rules": [
+          [],
+          [
+            "GV-06"
+          ],
+          [
+            "GV-06"
+          ]
+        ]
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T05",
+      "title": "Missing provenance",
+      "mandatory_item": 5,
+      "expected": {
+        "s": [
+          "ACCEPTED",
+          "REJECTED",
+          "REJECTED"
+        ],
+        "r": [
+          [],
+          [
+            "GV-07"
+          ],
+          [
+            "GV-07"
+          ]
+        ]
+      },
+      "actual": {
+        "s": [
+          "ACCEPTED",
+          "REJECTED",
+          "REJECTED"
+        ],
+        "r": [
+          [],
+          [
+            "GV-07"
+          ],
+          [
+            "GV-07"
+          ]
+        ]
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T06",
+      "title": "Stale or unconfirmed freshness",
+      "mandatory_item": 6,
+      "expected": {
+        "stale": [
+          "ACCEPTED",
+          "WARNING",
+          "WARNING",
+          "WARNING",
+          "WARNING"
+        ],
+        "unconfirmed": [
+          "ACCEPTED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ]
+      },
+      "actual": {
+        "stale": [
+          "ACCEPTED",
+          "WARNING",
+          "WARNING",
+          "WARNING",
+          "WARNING"
+        ],
+        "unconfirmed": [
+          "ACCEPTED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ]
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T07",
+      "title": "Unknown dataset identity",
+      "mandatory_item": 7,
+      "expected": {
+        "register": "REJECT_UNKNOWN_DATASET_ID",
+        "retrieve": "REJECT_UNKNOWN_DATASET_ID"
+      },
+      "actual": {
+        "register": "REJECT_UNKNOWN_DATASET_ID",
+        "retrieve": "REJECT_UNKNOWN_DATASET_ID"
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T08",
+      "title": "Missing or incompatible version",
+      "mandatory_item": 8,
+      "expected": {
+        "missing_version": "REJECT_MISSING_VERSION",
+        "unknown_version": "REJECT_UNKNOWN_DATASET_VERSION",
+        "unknown_schema": "REJECT_UNKNOWN_SCHEMA_VERSION",
+        "schema_not_bound_to_version": "REJECT_SCHEMA_VERSION_INCOMPATIBLE",
+        "retrieve_without_version": "REJECT_MISSING_VERSION"
+      },
+      "actual": {
+        "missing_version": "REJECT_MISSING_VERSION",
+        "unknown_version": "REJECT_UNKNOWN_DATASET_VERSION",
+        "unknown_schema": "REJECT_UNKNOWN_SCHEMA_VERSION",
+        "schema_not_bound_to_version": "REJECT_SCHEMA_VERSION_INCOMPATIBLE",
+        "retrieve_without_version": "REJECT_MISSING_VERSION"
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T09",
+      "title": "Schema compatibility or breaking change",
+      "mandatory_item": 9,
+      "expected": {
+        "mismatch_s1_as_s2": "REJECT_SCHEMA_MISMATCH",
+        "mismatch_s2_as_s1": "REJECT_SCHEMA_MISMATCH",
+        "removed_in_s2": [
+          "last_verified_date",
+          "moisture_pct",
+          "net_kg",
+          "received_date",
+          "source_ref",
+          "unit"
+        ],
+        "added_in_s2": [
+          "last_verified_at",
+          "moisture_percent",
+          "net_weight_kg",
+          "provenance_ref",
+          "quality_grade",
+          "received_at"
+        ],
+        "clean_s1_ok": "REGISTER_OK_WITH_WARNINGS",
+        "clean_s2_ok": "REGISTER_OK_WITH_WARNINGS"
+      },
+      "actual": {
+        "mismatch_s1_as_s2": "REJECT_SCHEMA_MISMATCH",
+        "mismatch_s2_as_s1": "REJECT_SCHEMA_MISMATCH",
+        "removed_in_s2": [
+          "last_verified_date",
+          "moisture_pct",
+          "net_kg",
+          "received_date",
+          "source_ref",
+          "unit"
+        ],
+        "added_in_s2": [
+          "last_verified_at",
+          "moisture_percent",
+          "net_weight_kg",
+          "provenance_ref",
+          "quality_grade",
+          "received_at"
+        ],
+        "clean_s1_ok": "REGISTER_OK_WITH_WARNINGS",
+        "clean_s2_ok": "REGISTER_OK_WITH_WARNINGS"
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T10",
+      "title": "Unauthorized retrieval",
+      "mandatory_item": 10,
+      "expected": {
+        "no_token": "DENY_UNAUTHENTICATED",
+        "unknown_token": "DENY_UNKNOWN_PRINCIPAL",
+        "reader_without_grant": "DENY_DATASET_NOT_GRANTED",
+        "reader_cannot_register": "DENY_ROLE_NOT_PERMITTED",
+        "authorised_reader": "OK_WITH_WARNINGS"
+      },
+      "actual": {
+        "no_token": "DENY_UNAUTHENTICATED",
+        "unknown_token": "DENY_UNKNOWN_PRINCIPAL",
+        "reader_without_grant": "DENY_DATASET_NOT_GRANTED",
+        "reader_cannot_register": "DENY_ROLE_NOT_PERMITTED",
+        "authorised_reader": "OK_WITH_WARNINGS"
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T11",
+      "title": "Partial retrieval and records carrying warnings",
+      "mandatory_item": 11,
+      "expected": {
+        "v1": [
+          "OK_WITH_WARNINGS",
+          50,
+          12,
+          {
+            "ACCEPTED": 34,
+            "WARNING": 10,
+            "UNRESOLVED": 6
+          },
+          [
+            "FRESHNESS_UNCONFIRMED_PRESENT",
+            "PARTIAL_RETRIEVAL_REJECTED_WITHHELD",
+            "RECORDS_WITH_WARNINGS",
+            "STALE_RECORDS_PRESENT",
+            "UNRESOLVED_RECORDS_INCLUDED"
+          ]
+        ],
+        "v2": [
+          "OK_WITH_WARNINGS",
+          21,
+          3,
+          {
+            "ACCEPTED": 19,
+            "WARNING": 1,
+            "UNRESOLVED": 1
+          },
+          [
+            "PARTIAL_RETRIEVAL_REJECTED_WITHHELD",
+            "RECORDS_WITH_WARNINGS",
+            "STALE_RECORDS_PRESENT",
+            "UNRESOLVED_RECORDS_INCLUDED"
+          ]
+        ]
+      },
+      "actual": {
+        "v1": [
+          "OK_WITH_WARNINGS",
+          50,
+          12,
+          {
+            "ACCEPTED": 34,
+            "WARNING": 10,
+            "UNRESOLVED": 6
+          },
+          [
+            "FRESHNESS_UNCONFIRMED_PRESENT",
+            "PARTIAL_RETRIEVAL_REJECTED_WITHHELD",
+            "RECORDS_WITH_WARNINGS",
+            "STALE_RECORDS_PRESENT",
+            "UNRESOLVED_RECORDS_INCLUDED"
+          ]
+        ],
+        "v2": [
+          "OK_WITH_WARNINGS",
+          21,
+          3,
+          {
+            "ACCEPTED": 19,
+            "WARNING": 1,
+            "UNRESOLVED": 1
+          },
+          [
+            "PARTIAL_RETRIEVAL_REJECTED_WITHHELD",
+            "RECORDS_WITH_WARNINGS",
+            "STALE_RECORDS_PRESENT",
+            "UNRESOLVED_RECORDS_INCLUDED"
+          ]
+        ]
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T12",
+      "title": "Incorrect registration or retrieval count",
+      "mandatory_item": 12,
+      "expected": {
+        "declared_60_actual_62": "REJECT_COUNT_MISMATCH",
+        "declared_61_actual_62": "REJECT_COUNT_MISMATCH",
+        "all_rows_invalid": "REJECT_NO_VALID_RECORDS",
+        "retrieve_expecting_62": "FAIL_COUNT_MISMATCH",
+        "retrieve_expecting_50": "OK_WITH_WARNINGS"
+      },
+      "actual": {
+        "declared_60_actual_62": "REJECT_COUNT_MISMATCH",
+        "declared_61_actual_62": "REJECT_COUNT_MISMATCH",
+        "all_rows_invalid": "REJECT_NO_VALID_RECORDS",
+        "retrieve_expecting_62": "FAIL_COUNT_MISMATCH",
+        "retrieve_expecting_50": "OK_WITH_WARNINGS"
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T13",
+      "title": "Every row rule has a fixture that triggers it (coverage)",
+      "mandatory_item": null,
+      "expected": {
+        "fx_GV-01.csv": true,
+        "fx_GV-02.csv": true,
+        "fx_GV-03.csv": true,
+        "fx_GV-04-large.csv": true,
+        "fx_GV-04-small.csv": true,
+        "fx_GV-05.csv": true,
+        "fx_GV-06.csv": true,
+        "fx_GV-07.csv": true,
+        "fx_GV-08-unknown.csv": true,
+        "fx_GV-08-deprecated.csv": true,
+        "fx_GV-09.csv": true,
+        "fx_GV-10.csv": true,
+        "fx_GV-11-future.csv": true,
+        "fx_GV-11-order.csv": true,
+        "fx_GV-12.csv": true
+      },
+      "actual": {
+        "fx_GV-01.csv": true,
+        "fx_GV-02.csv": true,
+        "fx_GV-03.csv": true,
+        "fx_GV-04-large.csv": true,
+        "fx_GV-04-small.csv": true,
+        "fx_GV-05.csv": true,
+        "fx_GV-06.csv": true,
+        "fx_GV-07.csv": true,
+        "fx_GV-08-unknown.csv": true,
+        "fx_GV-08-deprecated.csv": true,
+        "fx_GV-09.csv": true,
+        "fx_GV-10.csv": true,
+        "fx_GV-11-future.csv": true,
+        "fx_GV-11-order.csv": true,
+        "fx_GV-12.csv": true
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T14",
+      "title": "Application results equal the independent second implementation",
+      "mandatory_item": null,
+      "expected": {
+        "v1": [],
+        "v1_rows": [
+          62,
+          62
+        ],
+        "v2": [],
+        "v2_rows": [
+          24,
+          24
+        ]
+      },
+      "actual": {
+        "v1": [],
+        "v1_rows": [
+          62,
+          62
+        ],
+        "v2": [],
+        "v2_rows": [
+          24,
+          24
+        ]
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T15",
+      "title": "Provenance preserved: every retrieved record carries its source reference",
+      "mandatory_item": null,
+      "expected": {
+        "records_without_provenance": []
+      },
+      "actual": {
+        "records_without_provenance": []
+      },
+      "result": "PASS",
+      "error": null
+    },
+    {
+      "id": "T16",
+      "title": "Determinism: two runs give identical output",
+      "mandatory_item": null,
+      "expected": {
+        "identical": true
+      },
+      "actual": {
+        "identical": true
+      },
+      "result": "PASS",
+      "error": null
+    }
+  ]
+}

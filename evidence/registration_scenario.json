@@ -1,0 +1,129 @@
+{
+  "label": "SIMULATED registration. Not MASTERDB.",
+  "results": [
+    {
+      "envelope_id": "ENV-01",
+      "expected": "REGISTER_OK_WITH_WARNINGS",
+      "outcome": "REGISTER_OK_WITH_WARNINGS",
+      "match": true,
+      "detail": {
+        "total_rows": 62,
+        "counts": {
+          "ACCEPTED": 34,
+          "WARNING": 10,
+          "UNRESOLVED": 6,
+          "REJECTED": 12
+        }
+      }
+    },
+    {
+      "envelope_id": "ENV-02",
+      "expected": "REGISTER_OK_WITH_WARNINGS",
+      "outcome": "REGISTER_OK_WITH_WARNINGS",
+      "match": true,
+      "detail": {
+        "total_rows": 24,
+        "counts": {
+          "ACCEPTED": 19,
+          "WARNING": 1,
+          "UNRESOLVED": 1,
+          "REJECTED": 3
+        }
+      }
+    },
+    {
+      "envelope_id": "ENV-03",
+      "expected": "REJECT_UNKNOWN_DATASET_ID",
+      "outcome": "REJECT_UNKNOWN_DATASET_ID",
+      "match": true,
+      "detail": {}
+    },
+    {
+      "envelope_id": "ENV-04",
+      "expected": "REJECT_MISSING_VERSION",
+      "outcome": "REJECT_MISSING_VERSION",
+      "match": true,
+      "detail": {}
+    },
+    {
+      "envelope_id": "ENV-05",
+      "expected": "REJECT_UNKNOWN_DATASET_VERSION",
+      "outcome": "REJECT_UNKNOWN_DATASET_VERSION",
+      "match": true,
+      "detail": {}
+    },
+    {
+      "envelope_id": "ENV-06",
+      "expected": "REJECT_UNKNOWN_SCHEMA_VERSION",
+      "outcome": "REJECT_UNKNOWN_SCHEMA_VERSION",
+      "match": true,
+      "detail": {}
+    },
+    {
+      "envelope_id": "ENV-07",
+      "expected": "REJECT_SCHEMA_MISMATCH (declares S2, columns are S1)",
+      "outcome": "REJECT_SCHEMA_MISMATCH",
+      "match": true,
+      "detail": {
+        "column_check": {
+          "ok": false,
+          "missing": [
+            "net_weight_kg",
+            "moisture_percent",
+            "quality_grade",
+            "received_at",
+            "last_verified_at",
+            "provenance_ref"
+          ],
+          "unexpected": [
+            "net_kg",
+            "moisture_pct",
+            "received_date",
+            "last_verified_date",
+            "source_ref",
+            "unit"
+          ],
+          "order_differs": false
+        }
+      }
+    },
+    {
+      "envelope_id": "ENV-08",
+      "expected": "REJECT_SCHEMA_MISMATCH (declares S1, columns are S2)",
+      "outcome": "REJECT_SCHEMA_MISMATCH",
+      "match": true,
+      "detail": {
+        "column_check": {
+          "ok": false,
+          "missing": [
+            "net_kg",
+            "moisture_pct",
+            "received_date",
+            "last_verified_date",
+            "source_ref",
+            "unit"
+          ],
+          "unexpected": [
+            "net_weight_kg",
+            "moisture_percent",
+            "quality_grade",
+            "received_at",
+            "last_verified_at",
+            "provenance_ref"
+          ],
+          "order_differs": false
+        }
+      }
+    },
+    {
+      "envelope_id": "ENV-09",
+      "expected": "REJECT_COUNT_MISMATCH (declared 60, actual 62)",
+      "outcome": "REJECT_COUNT_MISMATCH",
+      "match": true,
+      "detail": {
+        "declared": 60,
+        "actual": 62
+      }
+    }
+  ]
+}

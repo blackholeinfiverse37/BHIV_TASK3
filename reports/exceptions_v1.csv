@@ -1,0 +1,29 @@
+row_number,record_id,status,rules,first_message
+6,AS1-0006,REJECTED,GV-01,required field is empty
+7,AS1-0007,REJECTED,GV-01,required field is empty
+8,AS1-0008,REJECTED,GV-02,not a number: '12O0.5'
+9,AS1-0009,REJECTED,GV-03,moisture -3.2 outside 0..40
+10,AS1-0010,REJECTED,GV-03,unknown commodity 'WHEET'
+11,AS1-0011,REJECTED,GV-03,tare must be less than gross
+12,AS1-0012,REJECTED,GV-04,net differs from gross - tare by 85.0 kg
+13,AS1-0013,WARNING,GV-04,net differs from gross - tare by 2.4 kg
+15,AS1-0015,UNRESOLVED,GV-06,"same warehouse, batch and receipt date as another record with a different record_id"
+16,AS1-0016,REJECTED,GV-07,provenance missing: source reference empty
+17,AS1-0017,REJECTED,GV-07,provenance missing: source_system empty
+18,AS1-0018,UNRESOLVED,GV-08,source 'SRC-GHOST' not in registry
+19,AS1-0019,UNRESOLVED,GV-08,source 'SRC-GHOST' not in registry
+20,AS1-0020,WARNING,GV-08,source 'SRC-LEGACY' is deprecated
+21,AS1-0021,WARNING,GV-08,source 'SRC-LEGACY' is deprecated
+22,AS1-0022,WARNING,GV-08,source 'SRC-LEGACY' is deprecated
+23,AS1-0023,WARNING,GV-09,last verified 196 days before reference date (limit 90)
+24,AS1-0024,WARNING,GV-09,last verified 196 days before reference date (limit 90)
+25,AS1-0025,WARNING,GV-09,last verified 196 days before reference date (limit 90)
+26,AS1-0026,WARNING,GV-09,last verified 196 days before reference date (limit 90)
+27,AS1-0027,UNRESOLVED,GV-10,"last verification date missing, freshness unconfirmed"
+28,AS1-0028,UNRESOLVED,GV-10,"last verification date missing, freshness unconfirmed"
+29,AS1-0029,REJECTED,GV-11,receipt date is after the reference date
+30,AS1-0030,REJECTED,GV-11,verified before it was received
+31,AS1-0031,WARNING,GV-12,moisture 15.8 above 14
+32,AS1-0032,WARNING,GV-12,moisture 15.8 above 14
+61,AS1-0004,REJECTED,GV-05,record_id already seen earlier in file
+62,AS1-0061,UNRESOLVED,GV-06,"same warehouse, batch and receipt date as another record with a different record_id"

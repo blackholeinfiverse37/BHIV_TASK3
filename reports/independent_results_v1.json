@@ -1,0 +1,440 @@
+{
+  "label": "Independent second implementation",
+  "total_rows": 62,
+  "counts": {
+    "ACCEPTED": 34,
+    "WARNING": 10,
+    "UNRESOLVED": 6,
+    "REJECTED": 12
+  },
+  "records": [
+    {
+      "row_number": 1,
+      "record_id": "AS1-0001",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 2,
+      "record_id": "AS1-0002",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 3,
+      "record_id": "AS1-0003",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 4,
+      "record_id": "AS1-0004",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 5,
+      "record_id": "AS1-0005",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 6,
+      "record_id": "AS1-0006",
+      "status": "REJECTED",
+      "rules": [
+        "GV-01"
+      ]
+    },
+    {
+      "row_number": 7,
+      "record_id": "AS1-0007",
+      "status": "REJECTED",
+      "rules": [
+        "GV-01"
+      ]
+    },
+    {
+      "row_number": 8,
+      "record_id": "AS1-0008",
+      "status": "REJECTED",
+      "rules": [
+        "GV-02"
+      ]
+    },
+    {
+      "row_number": 9,
+      "record_id": "AS1-0009",
+      "status": "REJECTED",
+      "rules": [
+        "GV-03"
+      ]
+    },
+    {
+      "row_number": 10,
+      "record_id": "AS1-0010",
+      "status": "REJECTED",
+      "rules": [
+        "GV-03"
+      ]
+    },
+    {
+      "row_number": 11,
+      "record_id": "AS1-0011",
+      "status": "REJECTED",
+      "rules": [
+        "GV-03"
+      ]
+    },
+    {
+      "row_number": 12,
+      "record_id": "AS1-0012",
+      "status": "REJECTED",
+      "rules": [
+        "GV-04"
+      ]
+    },
+    {
+      "row_number": 13,
+      "record_id": "AS1-0013",
+      "status": "WARNING",
+      "rules": [
+        "GV-04"
+      ]
+    },
+    {
+      "row_number": 14,
+      "record_id": "AS1-0014",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 15,
+      "record_id": "AS1-0015",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-06"
+      ]
+    },
+    {
+      "row_number": 16,
+      "record_id": "AS1-0016",
+      "status": "REJECTED",
+      "rules": [
+        "GV-07"
+      ]
+    },
+    {
+      "row_number": 17,
+      "record_id": "AS1-0017",
+      "status": "REJECTED",
+      "rules": [
+        "GV-07"
+      ]
+    },
+    {
+      "row_number": 18,
+      "record_id": "AS1-0018",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-08"
+      ]
+    },
+    {
+      "row_number": 19,
+      "record_id": "AS1-0019",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-08"
+      ]
+    },
+    {
+      "row_number": 20,
+      "record_id": "AS1-0020",
+      "status": "WARNING",
+      "rules": [
+        "GV-08"
+      ]
+    },
+    {
+      "row_number": 21,
+      "record_id": "AS1-0021",
+      "status": "WARNING",
+      "rules": [
+        "GV-08"
+      ]
+    },
+    {
+      "row_number": 22,
+      "record_id": "AS1-0022",
+      "status": "WARNING",
+      "rules": [
+        "GV-08"
+      ]
+    },
+    {
+      "row_number": 23,
+      "record_id": "AS1-0023",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ]
+    },
+    {
+      "row_number": 24,
+      "record_id": "AS1-0024",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ]
+    },
+    {
+      "row_number": 25,
+      "record_id": "AS1-0025",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ]
+    },
+    {
+      "row_number": 26,
+      "record_id": "AS1-0026",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ]
+    },
+    {
+      "row_number": 27,
+      "record_id": "AS1-0027",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-10"
+      ]
+    },
+    {
+      "row_number": 28,
+      "record_id": "AS1-0028",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-10"
+      ]
+    },
+    {
+      "row_number": 29,
+      "record_id": "AS1-0029",
+      "status": "REJECTED",
+      "rules": [
+        "GV-11"
+      ]
+    },
+    {
+      "row_number": 30,
+      "record_id": "AS1-0030",
+      "status": "REJECTED",
+      "rules": [
+        "GV-11"
+      ]
+    },
+    {
+      "row_number": 31,
+      "record_id": "AS1-0031",
+      "status": "WARNING",
+      "rules": [
+        "GV-12"
+      ]
+    },
+    {
+      "row_number": 32,
+      "record_id": "AS1-0032",
+      "status": "WARNING",
+      "rules": [
+        "GV-12"
+      ]
+    },
+    {
+      "row_number": 33,
+      "record_id": "AS1-0033",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 34,
+      "record_id": "AS1-0034",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 35,
+      "record_id": "AS1-0035",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 36,
+      "record_id": "AS1-0036",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 37,
+      "record_id": "AS1-0037",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 38,
+      "record_id": "AS1-0038",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 39,
+      "record_id": "AS1-0039",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 40,
+      "record_id": "AS1-0040",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 41,
+      "record_id": "AS1-0041",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 42,
+      "record_id": "AS1-0042",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 43,
+      "record_id": "AS1-0043",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 44,
+      "record_id": "AS1-0044",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 45,
+      "record_id": "AS1-0045",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 46,
+      "record_id": "AS1-0046",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 47,
+      "record_id": "AS1-0047",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 48,
+      "record_id": "AS1-0048",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 49,
+      "record_id": "AS1-0049",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 50,
+      "record_id": "AS1-0050",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 51,
+      "record_id": "AS1-0051",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 52,
+      "record_id": "AS1-0052",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 53,
+      "record_id": "AS1-0053",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 54,
+      "record_id": "AS1-0054",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 55,
+      "record_id": "AS1-0055",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 56,
+      "record_id": "AS1-0056",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 57,
+      "record_id": "AS1-0057",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 58,
+      "record_id": "AS1-0058",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 59,
+      "record_id": "AS1-0059",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 60,
+      "record_id": "AS1-0060",
+      "status": "ACCEPTED",
+      "rules": []
+    },
+    {
+      "row_number": 61,
+      "record_id": "AS1-0004",
+      "status": "REJECTED",
+      "rules": [
+        "GV-05"
+      ]
+    },
+    {
+      "row_number": 62,
+      "record_id": "AS1-0061",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-06"
+      ]
+    }
+  ]
+}

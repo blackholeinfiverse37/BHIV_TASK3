@@ -1,0 +1,127 @@
+{
+  "label": "SIMULATED telemetry. Not InsightFlow.",
+  "events": [
+    {
+      "seq": 1,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "registered",
+      "envelope_id": "ENV-01",
+      "dataset_version": "1.0.0",
+      "outcome": "REGISTER_OK_WITH_WARNINGS"
+    },
+    {
+      "seq": 2,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "registered",
+      "envelope_id": "ENV-02",
+      "dataset_version": "1.1.0",
+      "outcome": "REGISTER_OK_WITH_WARNINGS"
+    },
+    {
+      "seq": 3,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "register_failed",
+      "envelope_id": "ENV-03",
+      "outcome": "REJECT_UNKNOWN_DATASET_ID"
+    },
+    {
+      "seq": 4,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "register_failed",
+      "envelope_id": "ENV-04",
+      "outcome": "REJECT_MISSING_VERSION"
+    },
+    {
+      "seq": 5,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "register_failed",
+      "envelope_id": "ENV-05",
+      "outcome": "REJECT_UNKNOWN_DATASET_VERSION"
+    },
+    {
+      "seq": 6,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "register_failed",
+      "envelope_id": "ENV-06",
+      "outcome": "REJECT_UNKNOWN_SCHEMA_VERSION"
+    },
+    {
+      "seq": 7,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "register_failed",
+      "envelope_id": "ENV-07",
+      "outcome": "REJECT_SCHEMA_MISMATCH"
+    },
+    {
+      "seq": 8,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "register_failed",
+      "envelope_id": "ENV-08",
+      "outcome": "REJECT_SCHEMA_MISMATCH"
+    },
+    {
+      "seq": 9,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "register_failed",
+      "envelope_id": "ENV-09",
+      "outcome": "REJECT_COUNT_MISMATCH"
+    },
+    {
+      "seq": 10,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "retrieved",
+      "dataset_version": "1.0.0",
+      "outcome": "OK_WITH_WARNINGS",
+      "returned": 50
+    },
+    {
+      "seq": 11,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "retrieved",
+      "dataset_version": "1.1.0",
+      "outcome": "OK_WITH_WARNINGS",
+      "returned": 21
+    },
+    {
+      "seq": 12,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "retrieved",
+      "dataset_version": "1.0.0",
+      "outcome": "FAIL_COUNT_MISMATCH",
+      "returned": 50
+    },
+    {
+      "seq": 13,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "retrieve_failed",
+      "outcome": "REJECT_MISSING_VERSION"
+    },
+    {
+      "seq": 14,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "retrieve_failed",
+      "outcome": "REJECT_UNKNOWN_DATASET_ID"
+    },
+    {
+      "seq": 15,
+      "simulated": true,
+      "component": "InsightFlow(sim)",
+      "type": "retrieve_failed",
+      "outcome": "DENY_UNAUTHENTICATED"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+MUTATION CHECK (scratch copy; deliberate bugs: NET_REJECT_KG 5 -> 500, GV-07 source-reference check disabled)
+T01 PASS  Valid input
+T02 PASS  Missing required field
+T03 PASS  Invalid field type or value
+T04 PASS  Duplicate record
+T05 FAIL  Missing provenance
+T06 PASS  Stale or unconfirmed freshness
+T07 PASS  Unknown dataset identity
+T08 PASS  Missing or incompatible version
+T09 PASS  Schema compatibility or breaking change
+T10 PASS  Unauthorized retrieval
+T11 FAIL  Partial retrieval and records carrying warnings
+T12 FAIL  Incorrect registration or retrieval count
+T13 PASS  Every row rule has a fixture that triggers it (coverage)
+T14 FAIL  Application results equal the independent second implementation
+T15 FAIL  Provenance preserved: every retrieved record carries its source reference
+T16 PASS  Determinism: two runs give identical output
+11/16 passed, 5 failed

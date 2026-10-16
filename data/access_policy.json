@@ -1,0 +1,30 @@
+{
+  "_label": "SIMULATED local access model with fake tokens. Not production security.",
+  "principals": {
+    "tok-reader-01": {
+      "role": "reader",
+      "datasets": [
+        "DS-AGRI-STOCK-001"
+      ]
+    },
+    "tok-reader-02": {
+      "role": "reader",
+      "datasets": []
+    },
+    "tok-writer-01": {
+      "role": "registrar",
+      "datasets": [
+        "DS-AGRI-STOCK-001"
+      ]
+    }
+  },
+  "permissions": {
+    "reader": [
+      "retrieve"
+    ],
+    "registrar": [
+      "register",
+      "retrieve"
+    ]
+  }
+}

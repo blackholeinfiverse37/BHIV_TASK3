@@ -1,0 +1,131 @@
+{
+  "dataset_version": "1.1.0",
+  "exception_count": 5,
+  "exceptions": [
+    {
+      "row_number": 4,
+      "record_id": "AS2-0004",
+      "status": "REJECTED",
+      "rules": [
+        "GV-03"
+      ],
+      "findings": [
+        {
+          "rule": "GV-03",
+          "status": "REJECTED",
+          "field": "quality_grade",
+          "message": "unknown quality grade 'Z'"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/S2/20260721/00104"
+      },
+      "freshness": {
+        "last_verified": "2026-09-04T09:30:00+05:30",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 8,
+      "record_id": "AS2-0008",
+      "status": "REJECTED",
+      "rules": [
+        "GV-07"
+      ],
+      "findings": [
+        {
+          "rule": "GV-07",
+          "status": "REJECTED",
+          "field": "provenance_ref",
+          "message": "provenance missing: source reference empty"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": null
+      },
+      "freshness": {
+        "last_verified": "2026-09-20T09:30:00+05:30",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 12,
+      "record_id": "AS2-0012",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ],
+      "findings": [
+        {
+          "rule": "GV-09",
+          "status": "WARNING",
+          "field": "last_verified_at",
+          "message": "last verified 148 days before reference date (limit 90)"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/S2/20260623/00112"
+      },
+      "freshness": {
+        "last_verified": "2026-05-20T09:30:00+05:30",
+        "stale": true,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 16,
+      "record_id": "AS2-0016",
+      "status": "REJECTED",
+      "rules": [
+        "GV-02"
+      ],
+      "findings": [
+        {
+          "rule": "GV-02",
+          "status": "REJECTED",
+          "field": "last_verified_at",
+          "message": "invalid date format '2026-10-02T09:30:00', expected YYYY-MM-DDTHH:MM:SS+HH:MM (offset required)"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/S2/20260829/00116"
+      },
+      "freshness": {
+        "last_verified": "2026-10-02T09:30:00",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 20,
+      "record_id": "AS2-0020",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-08"
+      ],
+      "findings": [
+        {
+          "rule": "GV-08",
+          "status": "UNRESOLVED",
+          "field": "source_system",
+          "message": "source 'SRC-GHOST' not in registry"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-GHOST",
+        "source_ref": "SRC-GHOST/S2/20260905/00020"
+      },
+      "freshness": {
+        "last_verified": "2026-09-16T09:30:00+05:30",
+        "stale": false,
+        "unconfirmed": false
+      }
+    }
+  ]
+}

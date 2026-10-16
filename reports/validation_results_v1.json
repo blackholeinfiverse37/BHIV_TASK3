@@ -1,0 +1,1271 @@
+{
+  "dataset_id": "DS-AGRI-STOCK-001",
+  "dataset_version": "1.0.0",
+  "schema_version": "S1",
+  "reference_date": "2026-10-15",
+  "total_rows": 62,
+  "counts": {
+    "ACCEPTED": 34,
+    "WARNING": 10,
+    "UNRESOLVED": 6,
+    "REJECTED": 12
+  },
+  "records": [
+    {
+      "row_number": 1,
+      "record_id": "AS1-0001",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260815/00001"
+      },
+      "freshness": {
+        "last_verified": "2026-08-28",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 2,
+      "record_id": "AS1-0002",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260909/00002"
+      },
+      "freshness": {
+        "last_verified": "2026-10-07",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 3,
+      "record_id": "AS1-0003",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260820/00003"
+      },
+      "freshness": {
+        "last_verified": "2026-10-03",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 4,
+      "record_id": "AS1-0004",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260830/00004"
+      },
+      "freshness": {
+        "last_verified": "2026-09-04",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 5,
+      "record_id": "AS1-0005",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260801/00005"
+      },
+      "freshness": {
+        "last_verified": "2026-08-04",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 6,
+      "record_id": "AS1-0006",
+      "status": "REJECTED",
+      "rules": [
+        "GV-01"
+      ],
+      "findings": [
+        {
+          "rule": "GV-01",
+          "status": "REJECTED",
+          "field": "commodity",
+          "message": "required field is empty"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260821/00006"
+      },
+      "freshness": {
+        "last_verified": "2026-08-22",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 7,
+      "record_id": "AS1-0007",
+      "status": "REJECTED",
+      "rules": [
+        "GV-01"
+      ],
+      "findings": [
+        {
+          "rule": "GV-01",
+          "status": "REJECTED",
+          "field": "gross_kg",
+          "message": "required field is empty"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260727/00007"
+      },
+      "freshness": {
+        "last_verified": "2026-08-09",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 8,
+      "record_id": "AS1-0008",
+      "status": "REJECTED",
+      "rules": [
+        "GV-02"
+      ],
+      "findings": [
+        {
+          "rule": "GV-02",
+          "status": "REJECTED",
+          "field": "gross_kg",
+          "message": "not a number: '12O0.5'"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260824/00008"
+      },
+      "freshness": {
+        "last_verified": "2026-09-29",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 9,
+      "record_id": "AS1-0009",
+      "status": "REJECTED",
+      "rules": [
+        "GV-03"
+      ],
+      "findings": [
+        {
+          "rule": "GV-03",
+          "status": "REJECTED",
+          "field": "moisture_pct",
+          "message": "moisture -3.2 outside 0..40"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260811/00009"
+      },
+      "freshness": {
+        "last_verified": "2026-08-18",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 10,
+      "record_id": "AS1-0010",
+      "status": "REJECTED",
+      "rules": [
+        "GV-03"
+      ],
+      "findings": [
+        {
+          "rule": "GV-03",
+          "status": "REJECTED",
+          "field": "commodity",
+          "message": "unknown commodity 'WHEET'"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260813/00010"
+      },
+      "freshness": {
+        "last_verified": "2026-09-22",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 11,
+      "record_id": "AS1-0011",
+      "status": "REJECTED",
+      "rules": [
+        "GV-03"
+      ],
+      "findings": [
+        {
+          "rule": "GV-03",
+          "status": "REJECTED",
+          "field": "tare_kg",
+          "message": "tare must be less than gross"
+        },
+        {
+          "rule": "GV-03",
+          "status": "REJECTED",
+          "field": "net_kg",
+          "message": "net weight must be >= 0"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260924/00011"
+      },
+      "freshness": {
+        "last_verified": "2026-10-14",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 12,
+      "record_id": "AS1-0012",
+      "status": "REJECTED",
+      "rules": [
+        "GV-04"
+      ],
+      "findings": [
+        {
+          "rule": "GV-04",
+          "status": "REJECTED",
+          "field": "net_kg",
+          "message": "net differs from gross - tare by 85.0 kg"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260902/00012"
+      },
+      "freshness": {
+        "last_verified": "2026-09-20",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 13,
+      "record_id": "AS1-0013",
+      "status": "WARNING",
+      "rules": [
+        "GV-04"
+      ],
+      "findings": [
+        {
+          "rule": "GV-04",
+          "status": "WARNING",
+          "field": "net_kg",
+          "message": "net differs from gross - tare by 2.4 kg"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260811/00013"
+      },
+      "freshness": {
+        "last_verified": "2026-09-23",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 14,
+      "record_id": "AS1-0014",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260820/00014"
+      },
+      "freshness": {
+        "last_verified": "2026-09-20",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 15,
+      "record_id": "AS1-0015",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-06"
+      ],
+      "findings": [
+        {
+          "rule": "GV-06",
+          "status": "UNRESOLVED",
+          "field": "batch_id",
+          "message": "same warehouse, batch and receipt date as another record with a different record_id"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260803/00015"
+      },
+      "freshness": {
+        "last_verified": "2026-09-14",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 16,
+      "record_id": "AS1-0016",
+      "status": "REJECTED",
+      "rules": [
+        "GV-07"
+      ],
+      "findings": [
+        {
+          "rule": "GV-07",
+          "status": "REJECTED",
+          "field": "source_ref",
+          "message": "provenance missing: source reference empty"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": null
+      },
+      "freshness": {
+        "last_verified": "2026-08-12",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 17,
+      "record_id": "AS1-0017",
+      "status": "REJECTED",
+      "rules": [
+        "GV-07"
+      ],
+      "findings": [
+        {
+          "rule": "GV-07",
+          "status": "REJECTED",
+          "field": "source_system",
+          "message": "provenance missing: source_system empty"
+        }
+      ],
+      "provenance": {
+        "source_system": null,
+        "source_ref": "SRC-MANUAL/20260801/00017"
+      },
+      "freshness": {
+        "last_verified": "2026-08-11",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 18,
+      "record_id": "AS1-0018",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-08"
+      ],
+      "findings": [
+        {
+          "rule": "GV-08",
+          "status": "UNRESOLVED",
+          "field": "source_system",
+          "message": "source 'SRC-GHOST' not in registry"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-GHOST",
+        "source_ref": "SRC-GHOST/20260901/00018"
+      },
+      "freshness": {
+        "last_verified": "2026-09-02",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 19,
+      "record_id": "AS1-0019",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-08"
+      ],
+      "findings": [
+        {
+          "rule": "GV-08",
+          "status": "UNRESOLVED",
+          "field": "source_system",
+          "message": "source 'SRC-GHOST' not in registry"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-GHOST",
+        "source_ref": "SRC-GHOST/20260902/00019"
+      },
+      "freshness": {
+        "last_verified": "2026-09-30",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 20,
+      "record_id": "AS1-0020",
+      "status": "WARNING",
+      "rules": [
+        "GV-08"
+      ],
+      "findings": [
+        {
+          "rule": "GV-08",
+          "status": "WARNING",
+          "field": "source_system",
+          "message": "source 'SRC-LEGACY' is deprecated"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-LEGACY",
+        "source_ref": "SRC-LEGACY/20260822/00020"
+      },
+      "freshness": {
+        "last_verified": "2026-09-07",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 21,
+      "record_id": "AS1-0021",
+      "status": "WARNING",
+      "rules": [
+        "GV-08"
+      ],
+      "findings": [
+        {
+          "rule": "GV-08",
+          "status": "WARNING",
+          "field": "source_system",
+          "message": "source 'SRC-LEGACY' is deprecated"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-LEGACY",
+        "source_ref": "SRC-LEGACY/20260914/00021"
+      },
+      "freshness": {
+        "last_verified": "2026-09-18",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 22,
+      "record_id": "AS1-0022",
+      "status": "WARNING",
+      "rules": [
+        "GV-08"
+      ],
+      "findings": [
+        {
+          "rule": "GV-08",
+          "status": "WARNING",
+          "field": "source_system",
+          "message": "source 'SRC-LEGACY' is deprecated"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-LEGACY",
+        "source_ref": "SRC-LEGACY/20260905/00022"
+      },
+      "freshness": {
+        "last_verified": "2026-09-25",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 23,
+      "record_id": "AS1-0023",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ],
+      "findings": [
+        {
+          "rule": "GV-09",
+          "status": "WARNING",
+          "field": "last_verified_date",
+          "message": "last verified 196 days before reference date (limit 90)"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260905/00023"
+      },
+      "freshness": {
+        "last_verified": "2026-04-02",
+        "stale": true,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 24,
+      "record_id": "AS1-0024",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ],
+      "findings": [
+        {
+          "rule": "GV-09",
+          "status": "WARNING",
+          "field": "last_verified_date",
+          "message": "last verified 196 days before reference date (limit 90)"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260812/00024"
+      },
+      "freshness": {
+        "last_verified": "2026-04-02",
+        "stale": true,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 25,
+      "record_id": "AS1-0025",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ],
+      "findings": [
+        {
+          "rule": "GV-09",
+          "status": "WARNING",
+          "field": "last_verified_date",
+          "message": "last verified 196 days before reference date (limit 90)"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260722/00025"
+      },
+      "freshness": {
+        "last_verified": "2026-04-02",
+        "stale": true,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 26,
+      "record_id": "AS1-0026",
+      "status": "WARNING",
+      "rules": [
+        "GV-09"
+      ],
+      "findings": [
+        {
+          "rule": "GV-09",
+          "status": "WARNING",
+          "field": "last_verified_date",
+          "message": "last verified 196 days before reference date (limit 90)"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260720/00026"
+      },
+      "freshness": {
+        "last_verified": "2026-04-02",
+        "stale": true,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 27,
+      "record_id": "AS1-0027",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-10"
+      ],
+      "findings": [
+        {
+          "rule": "GV-10",
+          "status": "UNRESOLVED",
+          "field": "last_verified_date",
+          "message": "last verification date missing, freshness unconfirmed"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260814/00027"
+      },
+      "freshness": {
+        "last_verified": null,
+        "stale": false,
+        "unconfirmed": true
+      }
+    },
+    {
+      "row_number": 28,
+      "record_id": "AS1-0028",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-10"
+      ],
+      "findings": [
+        {
+          "rule": "GV-10",
+          "status": "UNRESOLVED",
+          "field": "last_verified_date",
+          "message": "last verification date missing, freshness unconfirmed"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260831/00028"
+      },
+      "freshness": {
+        "last_verified": null,
+        "stale": false,
+        "unconfirmed": true
+      }
+    },
+    {
+      "row_number": 29,
+      "record_id": "AS1-0029",
+      "status": "REJECTED",
+      "rules": [
+        "GV-11"
+      ],
+      "findings": [
+        {
+          "rule": "GV-11",
+          "status": "REJECTED",
+          "field": "received_date",
+          "message": "receipt date is after the reference date"
+        },
+        {
+          "rule": "GV-11",
+          "status": "REJECTED",
+          "field": "last_verified_date",
+          "message": "verified before it was received"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260712/00029"
+      },
+      "freshness": {
+        "last_verified": "2026-08-08",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 30,
+      "record_id": "AS1-0030",
+      "status": "REJECTED",
+      "rules": [
+        "GV-11"
+      ],
+      "findings": [
+        {
+          "rule": "GV-11",
+          "status": "REJECTED",
+          "field": "last_verified_date",
+          "message": "verified before it was received"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260708/00030"
+      },
+      "freshness": {
+        "last_verified": "2026-09-20",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 31,
+      "record_id": "AS1-0031",
+      "status": "WARNING",
+      "rules": [
+        "GV-12"
+      ],
+      "findings": [
+        {
+          "rule": "GV-12",
+          "status": "WARNING",
+          "field": "moisture_pct",
+          "message": "moisture 15.8 above 14"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260925/00031"
+      },
+      "freshness": {
+        "last_verified": "2026-10-12",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 32,
+      "record_id": "AS1-0032",
+      "status": "WARNING",
+      "rules": [
+        "GV-12"
+      ],
+      "findings": [
+        {
+          "rule": "GV-12",
+          "status": "WARNING",
+          "field": "moisture_pct",
+          "message": "moisture 15.8 above 14"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260906/00032"
+      },
+      "freshness": {
+        "last_verified": "2026-10-13",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 33,
+      "record_id": "AS1-0033",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260807/00033"
+      },
+      "freshness": {
+        "last_verified": "2026-09-14",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 34,
+      "record_id": "AS1-0034",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260719/00034"
+      },
+      "freshness": {
+        "last_verified": "2026-08-11",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 35,
+      "record_id": "AS1-0035",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260919/00035"
+      },
+      "freshness": {
+        "last_verified": "2026-10-01",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 36,
+      "record_id": "AS1-0036",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260821/00036"
+      },
+      "freshness": {
+        "last_verified": "2026-08-24",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 37,
+      "record_id": "AS1-0037",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260918/00037"
+      },
+      "freshness": {
+        "last_verified": "2026-10-13",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 38,
+      "record_id": "AS1-0038",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260628/00038"
+      },
+      "freshness": {
+        "last_verified": "2026-08-11",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 39,
+      "record_id": "AS1-0039",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260902/00039"
+      },
+      "freshness": {
+        "last_verified": "2026-10-10",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 40,
+      "record_id": "AS1-0040",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260706/00040"
+      },
+      "freshness": {
+        "last_verified": "2026-08-11",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 41,
+      "record_id": "AS1-0041",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260825/00041"
+      },
+      "freshness": {
+        "last_verified": "2026-09-30",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 42,
+      "record_id": "AS1-0042",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260807/00042"
+      },
+      "freshness": {
+        "last_verified": "2026-08-10",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 43,
+      "record_id": "AS1-0043",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260804/00043"
+      },
+      "freshness": {
+        "last_verified": "2026-08-06",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 44,
+      "record_id": "AS1-0044",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260825/00044"
+      },
+      "freshness": {
+        "last_verified": "2026-10-04",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 45,
+      "record_id": "AS1-0045",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260720/00045"
+      },
+      "freshness": {
+        "last_verified": "2026-08-20",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 46,
+      "record_id": "AS1-0046",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260814/00046"
+      },
+      "freshness": {
+        "last_verified": "2026-09-07",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 47,
+      "record_id": "AS1-0047",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260809/00047"
+      },
+      "freshness": {
+        "last_verified": "2026-09-07",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 48,
+      "record_id": "AS1-0048",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260816/00048"
+      },
+      "freshness": {
+        "last_verified": "2026-09-25",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 49,
+      "record_id": "AS1-0049",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260919/00049"
+      },
+      "freshness": {
+        "last_verified": "2026-10-10",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 50,
+      "record_id": "AS1-0050",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260915/00050"
+      },
+      "freshness": {
+        "last_verified": "2026-10-14",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 51,
+      "record_id": "AS1-0051",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260622/00051"
+      },
+      "freshness": {
+        "last_verified": "2026-08-01",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 52,
+      "record_id": "AS1-0052",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260915/00052"
+      },
+      "freshness": {
+        "last_verified": "2026-09-22",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 53,
+      "record_id": "AS1-0053",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260728/00053"
+      },
+      "freshness": {
+        "last_verified": "2026-08-08",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 54,
+      "record_id": "AS1-0054",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260828/00054"
+      },
+      "freshness": {
+        "last_verified": "2026-10-10",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 55,
+      "record_id": "AS1-0055",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260724/00055"
+      },
+      "freshness": {
+        "last_verified": "2026-08-07",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 56,
+      "record_id": "AS1-0056",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260825/00056"
+      },
+      "freshness": {
+        "last_verified": "2026-10-05",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 57,
+      "record_id": "AS1-0057",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260831/00057"
+      },
+      "freshness": {
+        "last_verified": "2026-09-02",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 58,
+      "record_id": "AS1-0058",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260926/00058"
+      },
+      "freshness": {
+        "last_verified": "2026-10-06",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 59,
+      "record_id": "AS1-0059",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260730/00059"
+      },
+      "freshness": {
+        "last_verified": "2026-08-09",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 60,
+      "record_id": "AS1-0060",
+      "status": "ACCEPTED",
+      "rules": [],
+      "findings": [],
+      "provenance": {
+        "source_system": "SRC-MANUAL",
+        "source_ref": "SRC-MANUAL/20260918/00060"
+      },
+      "freshness": {
+        "last_verified": "2026-10-08",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 61,
+      "record_id": "AS1-0004",
+      "status": "REJECTED",
+      "rules": [
+        "GV-05"
+      ],
+      "findings": [
+        {
+          "rule": "GV-05",
+          "status": "REJECTED",
+          "field": "record_id",
+          "message": "record_id already seen earlier in file"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-B",
+        "source_ref": "SRC-WMS-B/20260830/00004"
+      },
+      "freshness": {
+        "last_verified": "2026-09-04",
+        "stale": false,
+        "unconfirmed": false
+      }
+    },
+    {
+      "row_number": 62,
+      "record_id": "AS1-0061",
+      "status": "UNRESOLVED",
+      "rules": [
+        "GV-06"
+      ],
+      "findings": [
+        {
+          "rule": "GV-06",
+          "status": "UNRESOLVED",
+          "field": "batch_id",
+          "message": "same warehouse, batch and receipt date as another record with a different record_id"
+        }
+      ],
+      "provenance": {
+        "source_system": "SRC-WMS-A",
+        "source_ref": "SRC-WMS-A/20260803/00015-R"
+      },
+      "freshness": {
+        "last_verified": "2026-09-14",
+        "stale": false,
+        "unconfirmed": false
+      }
+    }
+  ]
+}

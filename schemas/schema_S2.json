@@ -1,0 +1,47 @@
+{
+  "schema_version": "S2",
+  "label": "Schema S2 for DS-AGRI-STOCK-001. Breaking change from S1. Local practice definition, not an MDU artefact.",
+  "date_format": "datetime_tz",
+  "columns": ["record_id", "warehouse_id", "commodity", "batch_id", "gross_kg", "tare_kg",
+              "net_weight_kg", "moisture_percent", "quality_grade", "received_at",
+              "last_verified_at", "source_system", "provenance_ref"],
+  "canonical_map": {
+    "record_id": "record_id",
+    "warehouse_id": "warehouse_id",
+    "commodity": "commodity",
+    "batch_id": "batch_id",
+    "gross": "gross_kg",
+    "tare": "tare_kg",
+    "net": "net_weight_kg",
+    "moisture": "moisture_percent",
+    "received": "received_at",
+    "verified": "last_verified_at",
+    "source_system": "source_system",
+    "provenance_ref": "provenance_ref",
+    "grade": "quality_grade"
+  },
+  "required": ["record_id", "warehouse_id", "commodity", "batch_id", "gross", "tare", "net", "moisture", "received", "grade"],
+  "fields": {
+    "record_id": {"type": "string", "meaning": "Unique id of one stock record (AS2-nnnn)", "constraint": "required, unique in file"},
+    "warehouse_id": {"type": "string", "meaning": "Warehouse code", "constraint": "required"},
+    "commodity": {"type": "string", "meaning": "Grain type", "constraint": "required, one of WHEAT, RICE, MAIZE, SOYBEAN, CHICKPEA"},
+    "batch_id": {"type": "string", "meaning": "Batch identifier within a warehouse", "constraint": "required"},
+    "gross_kg": {"type": "decimal", "meaning": "Gross weight in kg", "constraint": "required, > 0"},
+    "tare_kg": {"type": "decimal", "meaning": "Tare weight in kg", "constraint": "required, >= 0 and < gross_kg"},
+    "net_weight_kg": {"type": "decimal", "meaning": "Net weight in kg (renamed from net_kg)", "constraint": "required, >= 0, equals gross - tare within 0.5 kg"},
+    "moisture_percent": {"type": "decimal", "meaning": "Moisture percent (renamed from moisture_pct)", "constraint": "required, 0..40; above 14 gives warning"},
+    "quality_grade": {"type": "string", "meaning": "Quality grade (new in S2)", "constraint": "required, one of A, B, C"},
+    "received_at": {"type": "datetime with offset, e.g. 2026-09-01T09:30:00+05:30", "meaning": "Receipt time (replaces received_date)", "constraint": "required, offset mandatory, not after reference date"},
+    "last_verified_at": {"type": "datetime with offset", "meaning": "Verification time (replaces last_verified_date)", "constraint": "empty = freshness unconfirmed; offset mandatory; not before received_at; older than 90 days = stale"},
+    "source_system": {"type": "string", "meaning": "System that produced the record", "constraint": "must be present (provenance); should be in source registry"},
+    "provenance_ref": {"type": "string", "meaning": "Reference to the source entry (renamed from source_ref)", "constraint": "must be present (provenance)"}
+  },
+  "breaking_changes_vs_S1": [
+    "net_kg renamed to net_weight_kg",
+    "moisture_pct renamed to moisture_percent",
+    "source_ref renamed to provenance_ref",
+    "received_date and last_verified_date replaced by timezone-aware received_at and last_verified_at",
+    "unit column removed",
+    "quality_grade added and required"
+  ]
+}

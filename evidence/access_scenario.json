@@ -1,0 +1,47 @@
+{
+  "label": "SIMULATED local access model. Not a security certification.",
+  "results": [
+    {
+      "request_id": "REQ-01",
+      "action": "retrieve",
+      "expected": "ALLOW (records carry warnings/unresolved flags)",
+      "outcome": "ALLOW",
+      "match": true
+    },
+    {
+      "request_id": "REQ-02",
+      "action": "retrieve",
+      "expected": "DENY_UNAUTHENTICATED",
+      "outcome": "DENY_UNAUTHENTICATED",
+      "match": true
+    },
+    {
+      "request_id": "REQ-03",
+      "action": "retrieve",
+      "expected": "DENY_UNKNOWN_PRINCIPAL",
+      "outcome": "DENY_UNKNOWN_PRINCIPAL",
+      "match": true
+    },
+    {
+      "request_id": "REQ-04",
+      "action": "register",
+      "expected": "DENY_ROLE_NOT_PERMITTED",
+      "outcome": "DENY_ROLE_NOT_PERMITTED",
+      "match": true
+    },
+    {
+      "request_id": "REQ-05",
+      "action": "retrieve",
+      "expected": "DENY_DATASET_NOT_GRANTED",
+      "outcome": "DENY_DATASET_NOT_GRANTED",
+      "match": true
+    },
+    {
+      "request_id": "REQ-06",
+      "action": "register",
+      "expected": "ALLOW",
+      "outcome": "ALLOW",
+      "match": true
+    }
+  ]
+}

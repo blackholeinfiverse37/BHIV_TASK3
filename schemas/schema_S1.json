@@ -1,0 +1,39 @@
+{
+  "schema_version": "S1",
+  "label": "Schema S1 for DS-AGRI-STOCK-001. Local practice definition, not an MDU artefact.",
+  "date_format": "date",
+  "columns": ["record_id", "warehouse_id", "commodity", "batch_id", "gross_kg", "tare_kg",
+              "net_kg", "moisture_pct", "received_date", "last_verified_date",
+              "source_system", "source_ref", "unit"],
+  "canonical_map": {
+    "record_id": "record_id",
+    "warehouse_id": "warehouse_id",
+    "commodity": "commodity",
+    "batch_id": "batch_id",
+    "gross": "gross_kg",
+    "tare": "tare_kg",
+    "net": "net_kg",
+    "moisture": "moisture_pct",
+    "received": "received_date",
+    "verified": "last_verified_date",
+    "source_system": "source_system",
+    "provenance_ref": "source_ref",
+    "grade": null
+  },
+  "required": ["record_id", "warehouse_id", "commodity", "batch_id", "gross", "tare", "net", "moisture", "received"],
+  "fields": {
+    "record_id": {"type": "string", "meaning": "Unique id of one stock record (AS1-nnnn)", "constraint": "required, unique in file"},
+    "warehouse_id": {"type": "string", "meaning": "Warehouse code", "constraint": "required"},
+    "commodity": {"type": "string", "meaning": "Grain type", "constraint": "required, one of WHEAT, RICE, MAIZE, SOYBEAN, CHICKPEA"},
+    "batch_id": {"type": "string", "meaning": "Batch identifier within a warehouse", "constraint": "required"},
+    "gross_kg": {"type": "decimal", "meaning": "Gross weight in kg", "constraint": "required, > 0"},
+    "tare_kg": {"type": "decimal", "meaning": "Container/vehicle weight in kg", "constraint": "required, >= 0 and < gross_kg"},
+    "net_kg": {"type": "decimal", "meaning": "Net weight in kg", "constraint": "required, >= 0, equals gross_kg - tare_kg within 0.5 kg"},
+    "moisture_pct": {"type": "decimal", "meaning": "Moisture content, percent", "constraint": "required, 0..40; above 14 gives warning"},
+    "received_date": {"type": "date YYYY-MM-DD", "meaning": "Date batch was received", "constraint": "required, not after reference date"},
+    "last_verified_date": {"type": "date YYYY-MM-DD", "meaning": "Date the record was last verified", "constraint": "empty = freshness unconfirmed; not before received_date; older than 90 days = stale"},
+    "source_system": {"type": "string", "meaning": "System that produced the record", "constraint": "must be present (provenance); should be in source registry"},
+    "source_ref": {"type": "string", "meaning": "Reference to the source entry", "constraint": "must be present (provenance)"},
+    "unit": {"type": "string", "meaning": "Weight unit, always kg in this dataset", "constraint": "informational"}
+  }
+}

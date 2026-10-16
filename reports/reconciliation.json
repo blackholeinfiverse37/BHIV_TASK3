@@ -1,0 +1,75 @@
+{
+  "checks": [
+    {
+      "check": "v1 row totals A=B=C",
+      "ok": true,
+      "detail": "A=62 B=62 C=62"
+    },
+    {
+      "check": "v1 status counts A=B",
+      "ok": true,
+      "detail": "A={'ACCEPTED': 34, 'WARNING': 10, 'UNRESOLVED': 6, 'REJECTED': 12} B={'ACCEPTED': 34, 'WARNING': 10, 'UNRESOLVED': 6, 'REJECTED': 12}"
+    },
+    {
+      "check": "v1 status counts A=C",
+      "ok": true,
+      "detail": "C={'ACCEPTED': 34, 'WARNING': 10, 'UNRESOLVED': 6, 'REJECTED': 12}"
+    },
+    {
+      "check": "v1 per-row status and rule set A=B=C",
+      "ok": true,
+      "detail": "all rows agree"
+    },
+    {
+      "check": "v1 exception count = rows not ACCEPTED",
+      "ok": true,
+      "detail": "exceptions=28"
+    },
+    {
+      "check": "v2 row totals A=B=C",
+      "ok": true,
+      "detail": "A=24 B=24 C=24"
+    },
+    {
+      "check": "v2 status counts A=B",
+      "ok": true,
+      "detail": "A={'ACCEPTED': 19, 'WARNING': 1, 'UNRESOLVED': 1, 'REJECTED': 3} B={'ACCEPTED': 19, 'WARNING': 1, 'UNRESOLVED': 1, 'REJECTED': 3}"
+    },
+    {
+      "check": "v2 status counts A=C",
+      "ok": true,
+      "detail": "C={'ACCEPTED': 19, 'WARNING': 1, 'UNRESOLVED': 1, 'REJECTED': 3}"
+    },
+    {
+      "check": "v2 per-row status and rule set A=B=C",
+      "ok": true,
+      "detail": "all rows agree"
+    },
+    {
+      "check": "v2 exception count = rows not ACCEPTED",
+      "ok": true,
+      "detail": "exceptions=5"
+    },
+    {
+      "check": "RET-01 retrieved row identities = independent non-rejected rows",
+      "ok": true,
+      "detail": "50 rows"
+    },
+    {
+      "check": "RET-01 withheld count = independent rejected count",
+      "ok": true,
+      "detail": "withheld=12"
+    },
+    {
+      "check": "RET-02 retrieved row identities = independent non-rejected rows",
+      "ok": true,
+      "detail": "21 rows"
+    },
+    {
+      "check": "RET-02 withheld count = independent rejected count",
+      "ok": true,
+      "detail": "withheld=3"
+    }
+  ],
+  "all_match": true
+}
